@@ -1,0 +1,103 @@
+# break and continoue.......................
+for n in range(10):
+    if n == 6:
+        break
+    print(n, end =',')
+
+for n in range (10):
+    if n% 2 == 0:
+        print("even", n)
+        continue
+    print("odd",n)
+
+
+#converting value
+A=92
+type(A)
+print(str (A))
+B = str(A)
+print(type=(B))
+
+#string to integer
+c='42'
+print(type(c))
+D =int(c)
+print(type(D))
+
+#interger to float
+E=1
+print(type(E))
+F =float(E)
+print(type(f))
+ 
+
+
+#dictionary.............................................
+empty = {}
+print(type(empty))
+print (empty == dict())
+
+a = dict(one=1, two=2, three=3)
+b = {"one":1, "two":2,"three":3}
+print(a==b)
+
+
+
+# own yourself dictionary
+my_self={"name":"ankush_rana", "age":23, "mobile no":8894418733, "email":"ankushrana989@gmail,com"}
+print(my_self)
+print(my_self["name"])
+
+#change field
+my_self["name"]="Ankush kumar"
+print(my_self)
+
+d= {"cs":[106, 107, 110], "Science": [541, 113]}
+print(d.get("cs"))
+d.get("phil")
+print(d)
+
+e=my_self.get("a",[])
+print(len(e))
+
+# delte field
+del my_self["age"]
+print(my_self)
+
+#poping
+my_self.pop("email", )
+print(my_self)
+
+my_self={"name":"ankush_rana", "age":23, "mobile no":8894418733, "email":"ankushrana989@gmail,com"}
+print(my_self)
+
+
+# defining all keys on the list
+my_self = {"name": "ankush_rana", "age":23, "mobile no":8894418733}
+print(my_self.keys())
+print(my_self.values())
+print(my_self.items())
+
+print(len(my_self.keys()))
+
+d={"one":1,"two":2,"three":3}
+
+for value in d.values():
+    print(value)    
+print(len(d))
+print(1 in d.values())
+
+
+#matrix
+import numpy as np
+x=np.array([[1,4,7],[2,5,8],[3,6,9]])
+print(x)
+print('A matrix is of rank %d' %(x.ndim))
+
+#tensor
+x=np.array([[[1,4,7],[2,5,8],[3,6,9]],
+            [[10,40,70],[20,30,90],[10,11,12]],
+            [[100,400,700],[200,500,800],[300,600,900]]])
+print(x)
+print('this tensor is of rank %d' %(x.ndim))
+

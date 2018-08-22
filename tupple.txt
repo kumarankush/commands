@@ -1,0 +1,37 @@
+tuple = ('Pujari',"ankush","MCA")
+print(tuple)
+print(tuple[0])
+print(tuple[2])
+#length
+print(len(tuple))
+#slicing
+#tupple...........................................
+print(tuple[:2])
+
+#argument in packing and unpacking
+tu=123,"abcd",45,5.6
+print(tu)
+print(type(tu))
+
+#unpacking
+x,y,z,a=tu
+print(x)
+print(y)
+print(z)
+print(a)
+
+#swapping
+x=7
+y=8
+
+temp=x
+x=y
+y=temp
+
+print(x,y)
+
+x=5
+y=6
+x,y=y,x
+print(x,y)
+

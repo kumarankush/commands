@@ -1,0 +1,9 @@
+#interger example
+a=10
+b=12
+c=a//b
+print(c)
+x=12
+y=15
+z=x/z
+print(z)
